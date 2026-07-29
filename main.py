@@ -23,7 +23,7 @@ import models
 
 # Base and engine are for creating table, get_db is a independen fucntion provides
 # database session
-from database import Base, engine, get_db
+from database import engine, get_db
 
 # routers are for handling the routes of users and posts
 from routers import users, posts
@@ -31,9 +31,7 @@ from routers import users, posts
 # 
 @asynccontextmanager
 async def lifespan(_app: FastAPI):
-    # Startup: 
-    async with engine.begin() as conn:
-        await conn.run_sync(Base.metadata.create_all)
+    
     yield
     #shutdown
     await engine.dispose()
