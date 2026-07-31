@@ -41,7 +41,6 @@ app = FastAPI(lifespan=lifespan)
 
 app.mount('/static', StaticFiles(directory="static"), name="static")
 
-app.mount('/media', StaticFiles(directory="media"), name="media")
 
 # adding templates to the projects from the directory
 templates = Jinja2Templates(directory="templates")

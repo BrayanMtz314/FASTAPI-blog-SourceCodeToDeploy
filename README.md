@@ -17,6 +17,8 @@ Modules:
 - [**Module 12: File Uploads - Image Processing, Validation, and Storage**](/Documentation/module12.md)
 - [**Module 13: Pagination - Loading More Data with Query Parameters**](/Documentation/module13.md)
 - [**Module 14: Password Reset - Email, Tokens, and Background Tasks**](/Documentation/module14.md)
+- [**Module 15: PostgreSQL and Alembic - Database Migrations for Production**](/Documentation/module15.md)
+- [**Module 16: AWS S3 and Boto3 - Moving File Uploads to the Cloud**](/Documentation/module16.md)
 
 
 
